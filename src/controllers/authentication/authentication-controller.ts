@@ -4,11 +4,11 @@ import {
   SignUpWithUsernameAndPasswordError,
   type LogInWithUsernameAndPasswordResult,
   type SignUpWithUsernameAndPasswordResult,
-} from "./authentication-types";
+} from "./authentication-types.js";
 
 import * as jwt from "jsonwebtoken";
-import { jwtsecretKey } from "../../../environment";
-import { prismaClient } from "../../extras/prisma";
+import { jwtsecretKey } from "../../../environment.js";
+import { prismaClient } from "../../extras/prisma.js";
 
 const createJWToken = (parameters: {
   id: string;
