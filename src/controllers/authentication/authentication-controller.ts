@@ -6,7 +6,7 @@ import {
   type SignUpWithUsernameAndPasswordResult,
 } from "./authentication-types";
 
-import jwt from "jsonwebtoken";
+import * as jwt from "jsonwebtoken";
 import { jwtsecretKey } from "../../../environment";
 import { prismaClient } from "../../extras/prisma";
 

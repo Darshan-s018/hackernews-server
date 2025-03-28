@@ -1,4 +1,7 @@
-import type { User } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+type User = PrismaClient["user"];
 
 export type SignUpWithUsernameAndPasswordResult = {
   token: string;
