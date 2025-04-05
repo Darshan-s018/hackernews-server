@@ -138,7 +138,7 @@ jobs:
       # CONTAINER APP DEPLOY
       - name: Crate/update Container App
         run: |
-          az containerapp up \
+          az containerapp update \
             --name "${{ env.CONTAINER_APP_NAME }}" \
             --resource-group "${{ env.RESOURCE_GROUP }}" \
             --environment "${{ env.CONTAINER_APPS_ENVIRONMENT }}" \
